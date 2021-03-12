@@ -1,0 +1,11 @@
+
+- Un slider tipo diapositiva de unas noticias a modo de diapositiva, de forma que vaya mostrando noticias cada X tiempo
+
+- Forma de la noticia: 
+                        - Título
+                        - Descripción
+                        - Imagen
+
+- Puedo hacerlo con el fondo negro.
+
+- Lo más encapsulado posible, para que después puedan trabajar con ello.

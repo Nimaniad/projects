@@ -1,0 +1,70 @@
+body {
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+    background: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.carousel-caption {
+    text-align: left;
+    color: black;
+    opacity: 95%;
+    transform: opacity(95%);
+    position: -100%;
+}
+
+.carousel-child {
+    text-align: left;
+    color: black;
+    opacity: 95%;
+    background-color: white;
+    height: 200px;
+    animation: left-to-right 10.5s cubic-bezier(0.73, 0.01, 0.18, 1.01);
+}
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0%
+    }
+    20% {
+        transform: translateX(0%);
+        opacity: 95%
+    }
+    80% {
+        transform: translateX(0%);
+        opacity: 95%
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0%
+    }
+}
+
+.title {
+    margin-top: 5000px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.mobil {
+    margin-top: 5000px;
+    font-size: 25px;
+    font-weight: bold;
+}
