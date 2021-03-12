@@ -1,0 +1,3 @@
+fondo : rgb(251,247,237)
+
+letras grandes: rgb(0,76,63)

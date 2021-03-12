@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Adrian Gonzalez">
+    <meta name="generator" content="Hugo 0.80.0">
+    <title>Reconstrucción de Shopify.ca</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/starter-template.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Barra de navegacion -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top profile-menu">
+
+            <a class="navbar-brand" href="#">
+                <img src="./assets/brand/Shopify-Logo.svg" height="110px" />
+
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDropdown" aria-controls="navbarsDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsDropdown">
+                <ul class="navbar-nav w-100 p-2">
+                    <div class="dropdown p-2">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Start</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Start your business</a></li>
+                            <li><a class="dropdown-item" href="#">Branding</a></li>
+                            <li><a class="dropdown-item" href="#">Online presence</a></li>
+                            <li><a class="dropdown-item" href="#">Store set up</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown p-2">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Sell</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Sell everywhere</a></li>
+                            <li><a class="dropdown-item" href="#">Online Store</a></li>
+                            <li><a class="dropdown-item" href="#">Point of Sale</a></li>
+                            <li><a class="dropdown-item" href="#">Buy Button</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            <li><a class="dropdown-item" href="#">Seles shannels</a></li>
+                            <li><a class="dropdown-item" href="#">Custom storefront tools</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown p-2">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Market</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Make your business</a></li>
+                            <li><a class="dropdown-item" href="#">Email marketing</a></li>
+                            <li><a class="dropdown-item" href="#">Shopify Ping</a></li>
+                            <li><a class="dropdown-item" href="#">Google</a></li>
+                            <li><a class="dropdown-item" href="#">Facebook Ads</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown p-2">
+                        <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Manage</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Manage everything</a></li>
+                            <li><a class="dropdown-item" href="#">Payments</a></li>
+                            <li><a class="dropdown-item" href="#">Shipping</a></li>
+                            <li><a class="dropdown-item" href="#">Capital</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <ul class="navbar-nav w-50">
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="#">Pricing</a>
+                    </li>
+                    <div class="dropdown p-2">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Help center</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Business Courses</a></li>
+                            <li><a class="dropdown-item" href="#">Guides</a></li>
+                            <li><a class="dropdown-item" href="#">Forums</a></li>
+                            <li><a class="dropdown-item" href="#">Free tools</a></li>
+                            <li><a class="dropdown-item" href="#">Podcast</a></li>
+                            <li><a class="dropdown-item" href="#">business encyclopedia</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item p-2">
+                        <a class="nav-link active" href="#">Log in</a>
+                    </li>
+                    <button class="btn btn-success p-2 btn-ultimo" type="button">Start free trial</button>
+                </ul>
+            </div>
+    </div>
+    </nav>
+    <main class="container">
+        <div class="row gx-5 ">
+            <div class="col-sm-6 position-absolute top-50 start-0 translate-middle-y">
+                <h1 class="encabezado fw-bold">Anyone, anywhere, can <br> start a business</h1>
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input id="email" type="email" class="form-control" placeholder="Enter yout email adress">
+                        </div>
+                        <div class="col-sm-6">
+                            <button type="button" class="btn btn-success">Start free trial</button>
+                        </div>
+                    </div>
+                </form>
+                <p class="lead">Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.</p>
+            </div>
+
+            <div class="col-sm-6 position-absolute top-50 end-0 translate-middle-y ">
+                <img class="crop" src="./assets/brand/Img1.png" />
+            </div>
+        </div>
+    </main>
+    <!-- /.container -->
+
+    <div class="container green-container ">
+        <h1 class="pt-5 ">Bring your business online</h1>
+
+        <div class="row pb-3">
+            <div class="col">
+                <p class="fs-6">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.
+                </p>
+            </div>
+            <div class="col">
+                <a href="#" class="fw-bold flecha position-absolute end-0 m-4">Explore more examples
+                    <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="row pt-5 pb-5">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/brand/panel1.png" class="card-img-top">
+                    <div class="card-body" type="button" href="#">
+                        <h5 class="card-title">FOOD & DRINK</h5>
+                        <p class="card-text">Alfred</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/brand/panel2.png" class="card-img-top">
+                    <div class="card-body" type="button" href="#">
+                        <h5 class="card-title">JEWELRY</h5>
+                        <p class="card-text">Corey Moranis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/brand/panel3.png" class="card-img-top">
+                    <div class="card-body" type="button" href="#">
+                        <h5 class="card-title">FOOD & DRINK</h5>
+                        <p class="card-text">Detour Cofee</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/brand/panel4.png" class="card-img-top">
+                    <div class="card-body" type="button" href="#">
+                        <h5 class="card-title">BEAUTY & COSMETICS</h5>
+                        <p class="card-text">Then I Met You</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/brand/panel5.png" class="card-img-top">
+                    <div class="card-body" type="button" href="#">
+                        <h5 class="card-title">HOME & GARDEN</h5>
+                        <p class="card-text">Miss Boon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5 pb-5">
+            <span class="fs-4">Take the best path forward</span>
+            <div class="row pt-5">
+                <div class="col">
+                    <i class="far fa-window-restore fs-5 pb-4"></i>
+                    <h3 class="panel-title ">Start an online business</h3>
+                    <span>Create a business, whether you’ve got a fresh idea or are looking for a new way to make
+                        money.</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-store fs-5 pb-4"></i>
+                    <h3 class="panel-title ">Move your business online</h3>
+                    <span>Turn your retail store into an online store and keep serving customers without missing a
+                        beat.</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-random fs-5 pb-4"></i>
+                    <h3 class="panel-title ">Switch to Shopify</h3>
+                    <span>Bring your business to Shopify, no matter which ecommerce platform you’re currently
+                        using.</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-user-friends fs-5 pb-4"></i>
+                    <h3 class="panel-title ">Hire a Shopify expert</h3>
+                    <span>Get set up with the help of a trusted freelancer or agency from the Shopify Experts
+                        Marketplace.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container  pt-5 ">
+        <h2 class="panel3 position-absolute pt-5 mt-5 start-50 translate-middle">With you wherever you’re going</h2>
+        <p class="position-absolute top-50 start-50 translate-middle text-center">One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="assets/brand/ejemplo1.png" />
+            </div>
+            <div class="col">
+                <h3><br><br><br>Sell<br>everywhere</h3>
+                <p>Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.</p>
+                <a class="explore">Explore ways to sell <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container pt-2 pb-5">
+        <div class="row">
+            <div class="col">
+                <h3><br><br><br>Market<br>your business</h3>
+                <p>Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.</p>
+                <a class="explore">Explore how to market your business <i class="fas fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="col">
+
+                <img src="assets/brand/ejemplo2.png" />
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 pb-5">
+        <div class="row">
+            <div class="col">
+                <img src="assets/brand/ejemplo3.png" />
+            </div>
+            <div class="col">
+                <h3><br><br><br>Manage<br>everything</h3>
+                <p>Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.</p>
+                <a class="explore">Explore how to manage your business <i class="fas fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container-pre-earth ">
+        <h2 class="shopify"><br><br>Empowering independent business<br>owners everywhere</h2>
+        <p class="fs-5 pt-4">Over <strong>1,000,000 businesses</strong> in <strong>175 countries</strong> around the world <br>have made over <strong>$200 billion USD</strong> in sales using Shopify.</p>
+        <a class="explore">Learn more about Shopify <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+
+    </div>
+    <div class=" container-earth pt-5 m-auto">
+        <div class="earth"></div>
+    </div>
+
+    <div class="container contenedor-final  mb-5">
+        <div class="row">
+            <div class="col">
+                <img src="assets/brand/ejemplo4.jpg" height="550px" width="600px" />
+            </div>
+            <div class="col">
+                <p class="testimonial-quote">“We’ve been able to build<br>something in 3 years that a<br>lot of brands haven’t actually<br>gotten to in 10 years.”</p>
+                <img class="foto-final-1" src="assets/brand/logo1.png" />
+                <p class="testimonial-quote-2">Chioma | Cee Cee’s Closet NYC</p>
+                <button type="button" class="btn btn-outline-light btn-final btn-lg"><i
+                        class="fas fa-play me-2"></i>Play Chioma and Uchenna's story</button>
+            </div>
+        </div>
+    </div>
+    <div class="container container-fotos">
+        <img src="assets/brand/logo1-negro.png" class="logos" />
+        <img src="assets/brand/logo2.png" class="logos" />
+        <img src="assets/brand/logo3.png" class="logos" />
+        <img src="assets/brand/logo4.png" class="logos" />
+        <img src="assets/brand/logo5.png" class="logos" />
+        <img src="assets/brand/logo6.png" class="logos" />
+        <img src="assets/brand/logo7.png" class="logos" />
+        <img src="assets/brand/logo8.png" class="logos" />
+    </div>
+    <div class=" container-last">
+        <div class="row">
+            <div class="col">
+                <h2 class="texto-final"><br><br>Get the help you need, every step <br>of the way</h2>
+                <h3 class="texto-final-pequeño"><br>Shopify support</h3>
+                <p class="subtexto-final-pequeño">Contact support 24/7, whether you’re <br>troubleshooting issues or looking for <br>business advice.</p>
+                <a class="explore-final">Contact support <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+
+                <h3 class="texto-final-pequeño"><br><br>Shopify Experts Marketplace</h3>
+                <p class="subtexto-final-pequeño">Hire a Shopify expert to help you with <br>everything from store setup to SEO.</p>
+                <a class="explore-final">Explore the Shopify Experts Marketplace<i class="fas fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="col">
+                <h3 class="texto-final-pequeño2">Shopify App Store</h3>
+                <p class="subtexto-final-pequeño">Add features and functionality to your <br>business with 6,000+ apps that integrate <br>directly with Shopify.</p>
+                <a class="explore-final">Visit the Shopify App Store <i class="fas fa-arrow-right"
+                        aria-hidden="true"></i></a>
+            </div>
+            <div class="col">
+                <img src="assets/brand/ejemplo5.jpg" height="700px" width="750px" />
+            </div>
+        </div>
+    </div>
+    <div class="final-container">
+        <h2 class="ultimo-texto">Start your business journey with Shopify</h2>
+        <p class="ultimo-subtexto">Try Shopify for free, and explore all the tools and services you need to start, run, and grow <br>your business.</p>
+        <button class="btn btn-success p-2  btn-ultimo col-2 row-cols-2" type="button">Start free trial</button>
+    </div>
+    <div class="container-grid">
+        <a href="#" class="explore-final-totop">Back to top <i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <div class="ultimo-verde">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active letra-final" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active letra-final" href="#">Carees</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active letra-final" aria-current="page" href="#">Press an Media</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active letra-final" aria-current="page" href="#">Shopify Plus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active letra-final" aria-current="page" href="#">Sitemap</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr class="solid">
+        <div class="row row-cols-lg-6">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title card-final">ONLINE STORE</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <a class="list-group-item grupo-lista border-0">Sell Online</a>
+                        <a class="list-group-item grupo-lista border-0">Features</a>
+                        <a class="list-group-item grupo-lista border-0">Examples</a>
+                        <a class="list-group-item grupo-lista border-0">Website editor</a>
+                        <a class="list-group-item grupo-lista border-0">Online retail</a>
+                        <a class="list-group-item grupo-lista border-0">Ecommerce website</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <a class="list-group-item grupo-lista border-0"><br><br><br>Domain names</a>
+                        <a class="list-group-item grupo-lista border-0">Themes</a>
+                        <a class="list-group-item grupo-lista border-0">Shopping cart</a>
+                        <a class="list-group-item grupo-lista border-0">Ecommerce hosting</a>
+                        <a class="list-group-item grupo-lista border-0">Mobile commerce</a>
+                        <a class="list-group-item grupo-lista border-0">Ecommerse software</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <a class="list-group-item grupo-lista border-0"><br><br><br>Online store builder</a>
+                        <a class="list-group-item grupo-lista border-0">Oberlo</a>
+                        <a class="list-group-item grupo-lista border-0">Dropshipping Business</a>
+                        <a class="list-group-item grupo-lista border-0">Store themes</a>
+                        <a class="list-group-item grupo-lista border-0">Cross-Border Ecommerce</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title card-final">POINT OF SALE</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <a class="list-group-item grupo-lista border-0">Point of sale</a>
+                        <a class="list-group-item grupo-lista border-0">Features</a>
+                        <a class="list-group-item grupo-lista border-0">Hardware</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title card-final">SUPPORT</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <a class="list-group-item grupo-lista border-0">24/7 support</a>
+                        <a class="list-group-item grupo-lista border-0">shopify Help Center</a>
+                        <a class="list-group-item grupo-lista border-0">Forums</a>
+                        <a class="list-group-item grupo-lista border-0">API documentation</a>
+                        <a class="list-group-item grupo-lista border-0">Free tools</a>
+                        <a class="list-group-item grupo-lista border-0">Free stock photos</a>
+                        <a class="list-group-item grupo-lista border-0">Wbesite for sale</a>
+                        <a class="list-group-item grupo-lista border-0">Hatchful</a>
+                        <a class="list-group-item grupo-lista border-0">Business name generator</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title card-final">SHOPIFY</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <a class="list-group-item grupo-lista border-0">Contact</a>
+                        <a class="list-group-item grupo-lista border-0">Partner program</a>
+                        <a class="list-group-item grupo-lista border-0">Afiliate program</a>
+                        <a class="list-group-item grupo-lista border-0">App developers</a>
+                        <a class="list-group-item grupo-lista border-0">Investors</a>
+                        <a class="list-group-item grupo-lista border-0">Accessibility</a>
+                        <a class="list-group-item grupo-lista border-0">shopify events</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="solid">
+        <div class="iconos">
+            <div class="row">
+                <div class="col">
+                    <ul class="lista-iconos">
+                        <a class="icono fs-5 p-3"><i class="fab fa-facebook"></i></a>
+                        <a class="icono fs-5 p-3"><i class="fab fa-twitter-square"></i></a>
+                        <a class="icono fs-5 p-3"><i class="fab fa-youtube-square"></i></a>
+                        <a class="icono fs-5 p-3"><i class="fab fa-instagram"></i></a>
+                        <a class="icono fs-5 p-3"><i class="fab fa-linkedin"></i></a>
+                        <a class="icono fs-5 p-3"><i class="fab fa-pinterest"></i></a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="terms-of-service">
+                        <a href="#" class="grupo-lista p-3">Terms of Service</a>
+                        <a href="#" class="grupo-lista p-3">Privacy Policy</a>
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn btn-idioma dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-globe"></i> English
+                            </button>
+                            <ul class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                                <li><a href="#" class="idioma">Spanish</a></li>
+                                <li><a href="#" class="idioma">French</a></li>
+                                <li><a href="#" class="idioma">Deustch</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/e27a5745d9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

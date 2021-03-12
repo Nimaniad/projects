@@ -1,0 +1,338 @@
+body {
+    padding-top: 5rem;
+}
+
+.container-fluid {
+    height: 60px;
+}
+
+.container {
+    width: 1400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container>.crop {
+    position: absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.green-container {
+    color: white;
+    background-color: rgb(0, 76, 63);
+    width: 1400px;
+    height: 1200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.flecha {
+    color: white;
+    text-decoration: none;
+}
+
+.encabezado {
+    color: rgb(0, 76, 63);
+}
+
+.profile-menu {
+    margin-left: 50px;
+}
+
+.dropdown-item {
+    color: s#42474c;
+}
+
+.panel2 {
+    font-size: 1.875em;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+}
+
+.fa-window-restore {
+    color: rgb(193, 240, 208);
+    width: 2.25em;
+    height: 2.25em;
+}
+
+.fa-store {
+    color: rgb(193, 240, 208);
+    width: 2.25em;
+    height: 2.25em;
+}
+
+.fa-random {
+    color: rgb(193, 240, 208);
+    width: 2.25em;
+    height: 2.25em;
+}
+
+.fa-user-friends {
+    color: rgb(193, 240, 208);
+    width: 2.25em;
+    height: 2.25em;
+}
+
+.panel-title {
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.panel3 {
+    font-weight: 400;
+    font-size: 2.5em;
+    margin-bottom: 0.3em;
+    color: #212326;
+    line-height: 1.2142857143;
+    padding-right: 1.2em;
+}
+
+.explore {
+    color: #008060;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.shopify {
+    font-weight: 400;
+    color: #212326;
+}
+
+.container-pre-earth {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.container-earth {
+    width: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+
+.earth {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background-image: url(https://lh3.googleusercontent.com/proxy/bWZhMU1xG-wXUqE7ij5ve1W_Xafr-uNudOHEjYvHbwnGy_IMQt0CJecFWTxjJmmkkW67X_0mUUYflKFUvaj5geJRYtW31y6MBoWVOmK1-qwAoRAOX__KmZlA-jBsLIFQcx4);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px #000;
+    animation: spin 30s linear alternate infinite;
+}
+
+@keyframes spin {
+    100% {
+        background-position: 100%;
+    }
+}
+
+.contenedor-final {
+    background-color: rgb(0, 46, 37);
+    width: 1200px;
+    height: 550px;
+}
+
+.testimonial-quote {
+    flex-grow: 1;
+    font-size: 1.875em;
+    text-align: center;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.foto-final-1 {
+    margin-left: 160px;
+}
+
+.testimonial-quote-2 {
+    flex-grow: 1;
+    font-size: 1.25em;
+    text-align: center;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 95px;
+}
+
+.btn-final {
+    margin-left: 70px;
+}
+
+.logos {
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+.container-fotos {
+    width: 1300px;
+    height: 100px;
+}
+
+.container-last {
+    margin-left: 150px;
+    margin-top: 10px;
+    background-color: rgb(251, 247, 237);
+    width: 1600px;
+    height: 700px;
+}
+
+.texto-final {
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.texto-final-pequeño {
+    margin-left: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.subtexto-final-pequeño {
+    margin-left: 20px;
+    font-size: 1.2em;
+    font-weight: 200;
+    color: gray;
+}
+
+.explore-final {
+    margin-left: 20px;
+    color: #008060;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.texto-final-pequeño2 {
+    margin-left: 20px;
+    margin-top: 320px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.final-container {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 250px;
+    width: 1400px;
+    height: 200px;
+}
+
+.ultimo-texto {
+    font-size: 1.875em;
+    margin-bottom: 0.6em;
+    line-height: 1.3333333333;
+    font-weight: 400;
+}
+
+.ultimo-subtexto {
+    font-size: 1.125em;
+    margin-bottom: 0.6666666667em;
+    font-weight: 400;
+    color: #6b7177;
+}
+
+.btn-ultimo {
+    height: 50px;
+    width: 150px;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.133;
+    display: inline-block;
+    padding: 1em 1.8125em;
+    border-radius: 4px;
+}
+
+.explore-final-totop {
+    margin-right: 20px;
+    color: #008060;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.container-grid {
+    margin-top: 100px;
+    width: 1600px;
+    height: 50px;
+    text-align: right;
+}
+
+.ultimo-verde {
+    color: white;
+    background-color: #002e25;
+    width: 1600px;
+    height: 600px;
+    margin-left: 150px;
+}
+
+.letra-final {
+    font-weight: 700;
+}
+
+.hr.solid {
+    border-top: 3px solid #bbb;
+    color: rgb(65, 63, 63);
+}
+
+.grupo-lista {
+    background-color: transparent;
+    color: #b6babf;
+    text-decoration: none;
+    font-size: 0.875em;
+}
+
+.card-final {
+    font-size: 0.875em;
+    font-weight: 800;
+    color: white;
+}
+
+.icono {
+    color: white;
+    font-size: 50;
+}
+
+.idioma {
+    color: #42474c;
+    text-decoration: none;
+}
+
+.terms-of-service {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.btn-idioma {
+    background-color: transparent;
+    color: white;
+}
