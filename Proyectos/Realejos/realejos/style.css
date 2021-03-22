@@ -7,30 +7,24 @@ body {
     height: 100%;
 }
 
-.carousel-item {
-    height: 100vh;
-    object-fit: cover;
-}
-
-.item {
-    height: 960px;
-}
-
 .image {
     width: 1400px;
     height: 964px;
-    animation: imagen-slide 10.5s cubic-bezier(0.73, 0.01, 0.18, 1.01);
+    animation: fade-in-out 10.5s linear;
 }
 
-@keyframes imagen-slide {
+@keyframes fade-in-out {
     0% {
-        transform: translateX(0%);
+        opacity: 0%;
+    }
+    10% {
+        opacity: 100%;
     }
     90% {
-        transform: translateX(0%);
+        opacity: 100%;
     }
     100% {
-        transform: translateX(100%);
+        opacity: 0%;
     }
 }
 
@@ -40,15 +34,6 @@ body {
     opacity: 95%;
     transform: opacity(95%);
     position: -100%;
-}
-
-.carousel-child {
-    text-align: left;
-    color: black;
-    opacity: 95%;
-    background-color: white;
-    height: 200px;
-    animation: left-to-right 10.5s cubic-bezier(0.73, 0.01, 0.18, 1.01);
 }
 
 @keyframes left-to-right {
@@ -109,10 +94,4 @@ body {
     padding-right: 30px;
     position: absolute;
     top: 700px;
-}
-
-.mobil {
-    margin-top: 5000px;
-    font-size: 25px;
-    font-weight: bold;
 }
