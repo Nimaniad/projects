@@ -11,9 +11,6 @@ fetch(RSS_URL)
         var parser = new DOMParser;
         var id = 0;
 
-
-
-
         const items = [...data.querySelectorAll("item")].map(item => {
             return {
                 title: item.querySelector("title").innerHTML,

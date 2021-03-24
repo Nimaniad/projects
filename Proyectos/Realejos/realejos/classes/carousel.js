@@ -44,7 +44,6 @@ export class Carousel {
         var parser = new DOMParser;
 
         var description = parser.parseFromString(item.text, 'text/html');
-
         console.log(description);
 
         this.container.innerHTML = `
