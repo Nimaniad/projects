@@ -1,0 +1,4 @@
+<resources>
+
+    <style name="Theme.Sanjuan" parent="@style/Theme.Leanback" />
+</resources>
