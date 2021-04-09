@@ -1,65 +1,57 @@
 package com.example.sanjuan;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.Window;
-import android.webkit.SslErrorHandler;
+import android.view.View;
+
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.net.http.*;
 
-import androidx.appcompat.app.AlertDialog;
 
-/*
- * Main Activity class that loads {@link MainFragment}.
- */
+
 public class MainActivity extends Activity {
 
-    WebView webView;
-    String url = "https://sanjuandelarambla.gestiturn.com/multimedia/player/8f539f7e-85f1-40e9-a0ff-ae430d078683";
-    // String url ="https://sanjuandelarambla.gestiturn.com/multimedia/player/8f539f7e-85f1-40e9-a0ff-ae430d078683";
+    private WebView myWebView;
 
-    @SuppressLint("SetJavaScriptEnabled")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        webView = findViewById(R.id.visor);
-
-        WebSettings settings = webView.getSettings();
-        settings.setDomStorageEnabled(true);
-
-        WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webView.setWebViewClient(new MyClientWebView());
-        webView.loadUrl(url);
 
 
-    }
+        myWebView = (WebView) findViewById(R.id.webview);
+        WebSettings webSettings = myWebView.getSettings();
 
-    private class MyClientWebView extends WebViewClient {
+        // Configuracion del buscador
+        myWebView.getSettings().setLoadsImagesAutomatically(true);
+        myWebView.getSettings().setJavaScriptEnabled(true);
 
-        @Override
-        public void onReceivedSslError(WebView view, final SslErrorHandler handler, SslError error) {
-            final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-            builder.setMessage(R.string.notification_error_ssl_cert_invalid);
-            builder.setPositiveButton("continue", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    handler.proceed();
-                }
-            });
-            builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    handler.cancel();
-                }
-            });
-            final AlertDialog dialog = builder.create();
-            dialog.show();
-        }
+        // Mejora la carga del Webview y uso de Cache
+        myWebView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
+        myWebView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
+        myWebView.getSettings().setAppCacheEnabled(true);
+        myWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webSettings.setDomStorageEnabled(true);
+        webSettings.setLayoutAlgorithm(WebSettings.LayoutAlgorithm.NARROW_COLUMNS);
+        myWebView.getSettings().setUseWideViewPort(true);  // ResponsiveLayout
+        webSettings.setSaveFormData(true);
+
+
+
+
+        // enable Web Storage: localStorage, sessionStorage
+        myWebView.getSettings().setDomStorageEnabled(true);
+        // Configuración del cliente a usa para abrir URLs
+        myWebView.setWebViewClient(new WebViewClient());
+        myWebView.setWebChromeClient(new WebChromeClient());
+        // Cargar la URL inicial  https://sanjuandelarambla.gestiturn.com/multimedia/player/60edb5a3-c210-40d9-940b-65f0a07fc09a // https://dracaena.gestiturn.com/multimedia/player/7d9d553e-81da-4057-84d3-c8c8bcdf9ee8
+        myWebView.loadUrl("https://dracaena.gestiturn.com/multimedia/player/7d9d553e-81da-4057-84d3-c8c8bcdf9ee8");
+        // Zoom out si el tamaño del contenido es mayor que el tamaño del viewport
+        myWebView.getSettings().setLoadWithOverviewMode(true);
+
+
+
     }
 }

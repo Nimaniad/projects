@@ -1,0 +1,41 @@
+com/example/player/MovieList.java
+ com.example.player.MovieList
+com/example/player/MainActivity.java
+ com.example.player.MainActivity
+com/example/player/PlaybackActivity.java
+ com.example.player.PlaybackActivity
+com/example/player/PlaybackVideoFragment.java
+ com.example.player.PlaybackVideoFragment
+com/example/player/DetailsDescriptionPresenter.java
+ com.example.player.DetailsDescriptionPresenter
+com/example/player/CardPresenter.java
+ com.example.player.CardPresenter
+ com.example.player.CardPresenter$1
+com/example/player/Movie.java
+ com.example.player.Movie
+com/example/player/BrowseErrorActivity.java
+ com.example.player.BrowseErrorActivity
+ com.example.player.BrowseErrorActivity$1
+ com.example.player.BrowseErrorActivity$SpinnerFragment
+com/example/player/MainFragment.java
+ com.example.player.MainFragment
+ com.example.player.MainFragment$1
+ com.example.player.MainFragment$2
+ com.example.player.MainFragment$GridItemPresenter
+ com.example.player.MainFragment$ItemViewClickedListener
+ com.example.player.MainFragment$ItemViewSelectedListener
+ com.example.player.MainFragment$UpdateBackgroundTask
+ com.example.player.MainFragment$UpdateBackgroundTask$1
+com/example/player/BuildConfig.java
+ com.example.player.BuildConfig
+com/example/player/VideoDetailsFragment.java
+ com.example.player.VideoDetailsFragment
+ com.example.player.VideoDetailsFragment$1
+ com.example.player.VideoDetailsFragment$2
+ com.example.player.VideoDetailsFragment$3
+ com.example.player.VideoDetailsFragment$ItemViewClickedListener
+com/example/player/ErrorFragment.java
+ com.example.player.ErrorFragment
+ com.example.player.ErrorFragment$1
+com/example/player/DetailsActivity.java
+ com.example.player.DetailsActivity

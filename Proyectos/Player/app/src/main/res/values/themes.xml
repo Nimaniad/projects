@@ -1,4 +1,0 @@
-<resources>
-
-    <style name="Theme.Player" parent="@style/Theme.Leanback" />
-</resources>
